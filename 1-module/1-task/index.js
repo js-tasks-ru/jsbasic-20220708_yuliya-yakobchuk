@@ -5,5 +5,3 @@ function factorial(n) {
     }
     return result;
 }
-
-console.log (result)
