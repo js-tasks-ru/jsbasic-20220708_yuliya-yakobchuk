@@ -1,6 +1,21 @@
 let calculator = {
-  // ваш код
+  sum: function() {
+    return this.a + this.b;
+  },
+
+  mul: function() {
+    return this.a * this.b;
+  },
+
+  read: function(a, b) {
+    this.a = a;
+    this.b = b;
+  }
 };
+
+calculator.read();
+console.log(calculator.sum());
+console.log(calculator.mul());
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
